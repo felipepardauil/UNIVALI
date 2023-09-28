@@ -1,15 +1,3 @@
-/*1) Utilizando sobrecarga de operador, crie a seguinte estrutura:
-struct fracao {
- int numerador, denominador;
-};
-Crie um menu, considerando cálculos entre duas frac?ões (com denominador igual
-ou diferente):
-? Soma.
-? Subtração.
-? Multiplicação.
-? Divisão.
-Utilize regras matemáticas para o cálculo.*/
-
 #include <iostream>
 using namespace std;
 
