@@ -2,13 +2,13 @@
 struct fracao {
  int numerador, denominador;
 };
-Crie um menu, considerando c·lculos entre duas frac?ıes (com denominador igual
+Crie um menu, considerando c√°lculos entre duas frac?√µes (com denominador igual
 ou diferente):
 ? Soma.
-? Subtrac?„o.
-? Multiplicac?„o.
-? Divis„o.
-Utilize regras matem·ticas para o c·lculo.*/
+? Subtra√ß√£o.
+? Multiplica√ß√£o.
+? Divis√£o.
+Utilize regras matem√°ticas para o c√°lculo.*/
 
 #include <iostream>
 using namespace std;
@@ -26,7 +26,7 @@ istream &operator>>(istream &is, fracao &fracaoGenerica) // sobrecarga de entrad
     return is;
 }
 
-ostream &operator<<(ostream &os, fracao &fracaoGenerica) // sobrecarga saÌda
+ostream &operator<<(ostream &os, fracao &fracaoGenerica) // sobrecarga sa√≠da
 {
     os << fracaoGenerica.numerador << "/" << fracaoGenerica.denominador;
 
@@ -55,7 +55,7 @@ fracao operator+(fracao fracao1, fracao fracao2) // sobrecarga soma
     return (soma);
 }
 
-fracao operator-(fracao fracao1, fracao fracao2) // sobrecarga subtraÁ„o
+fracao operator-(fracao fracao1, fracao fracao2) // sobrecarga subtra√ß√£o
 {
     fracao resto;
 
@@ -99,11 +99,11 @@ fracao operator/(fracao fracao1, fracao fracao2)
     return (quociente);
 }
 
-void lerFracao(fracao &a, fracao &b) // entrada das fraÁıes
+void lerFracao(fracao &a, fracao &b) // entrada das fra√ß√µes
 {
-    cout << "\nInforme o numerador e o denominador da fraÁ„o A:\n";
+    cout << "\nInforme o numerador e o denominador da fra√ß√£o A:\n";
     cin >> a;
-    cout << "\nInforme o numerador e o denominador da fraÁ„o B:\n";
+    cout << "\nInforme o numerador e o denominador da fra√ß√£o B:\n";
     cin >> b;
 }
 
@@ -117,8 +117,8 @@ int main()
 
     do // display menu;
     {
-        cout << "Informe a operaÁ„o:\n";
-        cout << "1-Soma\n2-SubtraÁ„o\n3-MultiplicaÁ„o\n4-Divis„o\n5-Finalizar\n"; // lista de operaÁıes
+        cout << "Informe a opera√ß√£o:\n";
+        cout << "1-Soma\n2-Subtra√ß√£o\n3-Multiplica√ß√£o\n4-Divis√£o\n5-Finalizar\n"; // lista de opera√ß√µes
         cin >> input;
 
         if (input == 1) // soma
@@ -130,31 +130,31 @@ int main()
             cout << "\nSoma de a+b = " << soma << endl;
             system("pause");
         }
-        else if (input == 2) // subtraÁ„o
+        else if (input == 2) // subtra√ß√£o
         {
             system("cls");
             lerFracao(a, b);
 
             fracao resto = a - b;
-            cout << "\nSubtraÁ„o de a-b = " << resto;
+            cout << "\nSubtra√ß√£o de a-b = " << resto;
             system("pause");
         }
-        else if (input == 3) // MultiplicaÁ„o
+        else if (input == 3) // Multiplica√ß√£o
         {
             system("cls");
             lerFracao(a, b);
 
             fracao produto = a * b;
-            cout << "\nMultiplicaÁ„o de a*b = " << produto;
+            cout << "\nMultiplica√ß√£o de a*b = " << produto;
             system("pause");
         }
-        else if (input == 4) // Divis„o
+        else if (input == 4) // Divis√£o
         {
             system("cls");
             lerFracao(a, b);
 
             fracao quociente = a / b;
-            cout << "\nDivis„o de a/b = " << quociente;
+            cout << "\nDivis√£o de a/b = " << quociente;
             system("pause");
         }
         else if (input == 5)
@@ -162,10 +162,10 @@ int main()
             system("cls");
             menu = false;
         }
-        else // entrada inv·lida
+        else // entrada inv√°lida
         {
             system("cls");
-            cout << "OperaÁ„o in·lida. Por favor, tente novamente";
+            cout << "Opera√ß√£o inv√°lida. Por favor, tente novamente";
         }
 
     } while (menu);
