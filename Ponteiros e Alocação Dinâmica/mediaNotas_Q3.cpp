@@ -36,7 +36,7 @@ void preencherNotas(float *notas, int N)
 {
     for (int i = 0; i < N; i++)
     {
-        cout << "Nota do " << i + 1 << "º aluno: ";
+        cout << "Nota do " << i + 1 << "Âº aluno: ";
         cin >> *(notas + i);
     }
 }
@@ -55,9 +55,9 @@ int main()
     preencherNotas(notas, N);
     media = calcularMedia(notas, N);
 
-    cout << "\nMédia das notas = " << media;
+    cout << "\nMÃ©dia das notas = " << media;
 
-    cout << "\nQuantidade de alunos com nota superior à média = " << compararNotasMedia(notas, media, N);
+    cout << "\nQuantidade de alunos com nota superior Ã  mÃ©dia = " << compararNotasMedia(notas, media, N);
 
     delete[] notas;
 
