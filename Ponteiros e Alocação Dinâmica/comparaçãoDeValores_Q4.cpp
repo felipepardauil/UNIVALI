@@ -78,9 +78,9 @@ int main()
     qtd_menores = elementosMenores(vetor, N);
     qtd_iguais = elementosIguais(vetor, N);
 
-    cout << "\nQuantidade de elementos maiores do que o 1บ elemento = " << qtd_maiores;
-    cout << "\nQuantidades de elementos menores do que o 1บ elemento = " << qtd_menores;
-    cout << "\nQuantidade de elementos iguais ao 1บ elemento = " << qtd_iguais;
+    cout << "\nQuantidade de elementos maiores do que o 1ยบ elemento = " << qtd_maiores;
+    cout << "\nQuantidades de elementos menores do que o 1ยบ elemento = " << qtd_menores;
+    cout << "\nQuantidade de elementos iguais ao 1ยบ elemento = " << qtd_iguais;
 
     delete[] vetor;
 
