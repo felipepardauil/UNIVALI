@@ -74,7 +74,7 @@ int main()
 
     define_N(N);
 
-    vetor = new int[N]; // criando uma alocaÁ„o din‚mica de memÛria com N espaÁos alocados
+    vetor = new int[N]; // criando uma aloca√ß√£o din√¢mica de mem√≥ria com N espa√ßos alocados
 
     preencherVetor(vetor, N);
     exibirVetor(vetor, N);
@@ -83,7 +83,7 @@ int main()
 
     cout<<"\nMaior elemento do vetor = "<<maior;
     cout<<"\nMenor elemento do vetor = "<<menor;
-    cout<<"\nMÈdia dos elementos do vetor = "<<media;
+    cout<<"\nM√©dia dos elementos do vetor = "<<media;
 
     delete []vetor;
     
